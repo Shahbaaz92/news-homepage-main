@@ -16,7 +16,6 @@ body {
   align-items: center;
 }
 .wrapper {
-  border: 1px solid;
   max-width: 1110px;
   min-height: 100vh;
   margin: 50px;
@@ -31,7 +30,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
+.nav-button {
+  display: none;
+}
 header nav {
   display: flex;
   justify-content: space-between;
@@ -121,6 +122,12 @@ button {
 @media (max-width: 750px) {
   body {
     background-color: aquamarine;
+  }
+  .nav-button {
+    display: block;
+  }
+  header nav {
+    display: none;
   }
   main {
     display: grid;
